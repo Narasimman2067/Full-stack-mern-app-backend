@@ -76,7 +76,7 @@ export const loginAdmin=async (req,res,next)=>{
         return res.status(500).Json({ message: "unexpected Error Occured" });
       }
       return res.status(200).json({ admins });
-    } catch (error) {
-      return console.log(error);
+    } catch (err) {
+      return console.log(err);
     }
   };
